@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Socials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px;
             text-align: center;
-            background-color: #f2f2f2;
+            background-color: #f9f9f9;
         }
         
         h1 {
@@ -19,6 +20,7 @@
         .social-icons {
             list-style: none;
             padding: 0;
+            margin-top: 20px;
         }
 
         .social-icons li {
@@ -36,19 +38,47 @@
         .social-icons a:hover {
             color: #3498db;
         }
+
+        .icon-container {
+            background-color: #3498db;
+            border-radius: 50%;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .icon-container:hover {
+            background-color: #2980b9;
+        }
+
+        .icon-container i {
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
     <h1>Connect with Me</h1>
     
     <ul class="social-icons">
-        <li><a href="https://www.facebook.com/yourusername" target="_blank">Facebook</a></li>
-        <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
-        <li><a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></li>
+        <li>
+            <div class="icon-container">
+                <a href="https://www.facebook.com/yourusername" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </li>
+        <li>
+            <div class="icon-container">
+                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </li>
+        <li>
+            <div class="icon-container">
+                <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </li>
         <!-- Add more social media links as needed -->
     </ul>
 </body>
 </html>
+
 
 
 <!-- <head>
