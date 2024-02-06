@@ -10,62 +10,91 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            display: grid;
-            place-items: center;
-            height: 100vh;
-         background-color: #2C5DF2;
-        }
-        
-        h1 {
-            color: #ffffff;
-        }
-
-        .social-icons {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 20px;
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-            max-width: 600px;
-        }
-
-        .social-icons li {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-icons li {
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons li img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .social-icons li:hover {
+        .social-icons li img:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .social-icons a {
+        .social-icons li a {
             text-decoration: none;
             color: #2c3e50;
-            font-size: 28px;
+            font-size: 20px;
+            display: block;
+            margin-top: 10px;
+            transition: color 0.3s ease;
         }
 
-        .social-icons i {
-            margin-right: 10px;
+        .social-icons li a:hover {
+            color: #3498db;
         }
     </style>
 </head>
 <body>
-    <h1>IceFreezer</h1>
-    
-    <ul class="social-icons">
-        <li><a href="https://www.facebook.com/yourusername" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></li>
-        <li><a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
-        <li><a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
-        <!-- Add more social media links as needed -->
-    </ul>
+    <div class="container">
+        <h1>Connect with Me</h1>
+        
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.facebook.com/yourusername" target="_blank">
+                    <img src="https://via.placeholder.com/70" alt="Facebook">
+                    Facebook
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/yourusername" target="_blank">
+                    <img src="https://via.placeholder.com/70" alt="Twitter">
+                    Twitter
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/yourusername" target="_blank">
+                    <img src="https://via.placeholder.com/70" alt="Instagram">
+                    Instagram
+                </a>
+            </li>
+            <!-- Add more social media links as needed -->
+        </ul>
+    </div>
 </body>
 </html>
 
