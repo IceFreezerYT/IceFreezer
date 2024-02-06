@@ -8,8 +8,11 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
-            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            place-items: center;
+            height: 100vh;
             background-color: #f9f9f9;
         }
         
@@ -18,40 +21,39 @@
         }
 
         .social-icons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
             list-style: none;
             padding: 0;
             margin-top: 20px;
+            max-width: 600px;
         }
 
         .social-icons li {
-            display: inline-block;
-            margin: 0 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-icons li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .social-icons a {
             text-decoration: none;
             color: #2c3e50;
             font-size: 28px;
-            transition: color 0.3s ease;
         }
 
-        .social-icons a:hover {
-            color: #3498db;
-        }
-
-        .icon-container {
-            background-color: #3498db;
-            border-radius: 50%;
-            padding: 10px;
-            transition: background-color 0.3s ease;
-        }
-
-        .icon-container:hover {
-            background-color: #2980b9;
-        }
-
-        .icon-container i {
-            color: #ffffff;
+        .social-icons i {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -59,27 +61,13 @@
     <h1>Connect with Me</h1>
     
     <ul class="social-icons">
-        <li>
-            <div class="icon-container">
-                <a href="https://www.facebook.com/yourusername" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            </div>
-        </li>
-        <li>
-            <div class="icon-container">
-                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </li>
-        <li>
-            <div class="icon-container">
-                <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </li>
+        <li><a href="https://www.facebook.com/yourusername" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+        <li><a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+        <li><a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
         <!-- Add more social media links as needed -->
     </ul>
 </body>
 </html>
-
-
 
 <!-- <head>
   <meta content="subs' site" property="og:title">
