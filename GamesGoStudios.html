@@ -1,32 +1,118 @@
 <!DOCTYPE html>
-<html>
-  <head>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamesGo Studios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
- img {
-  border-radius: 50%;
-}
-     
-</style>
-
-  
-<title>GamesGo Studios</title>
-
-    
-    <!-- Thumbnail image/gif -->
-    <meta property="og:image" content="https://raw.githubusercontent.com/IceFreezerYT/IceFreezer/main/media/channels4_profile.jpg">
-    <meta property="og:type" content="video.other">
-    
-<!-- <img src="./media/IMG_0009-modified.png" alt="happy"> -->
-
-<style>
-body{
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            
   background-image: url('./media/BackgroundLine.png');
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-size:100% 100%
-}
-  </style>
 
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-icons li {
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons li img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-icons li img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-icons li a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 20px;
+            display: block;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons li a:hover {
+            color: #3498db;
+        }
+
+        /* Custom social media icons */
+        .fab {
+            font-size: 36px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Main Page</h1>
+        
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.facebook.com/yourusername" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    IceFreezer YouTube
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/yourusername" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    GamesGo Studios
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/yourusername" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    Discord Server
+                </a>
+            </li>
+            <!-- Add more social media links as needed -->
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+    
   <!--  <big>
       <big>
         <big> 
